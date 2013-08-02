@@ -1,5 +1,5 @@
 Static::Application.routes.draw do
-  get "users/new"
+  resources :users
 
   #resources :home
   root to: 'static_pages#home'
