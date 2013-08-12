@@ -12,9 +12,7 @@
   <%= render 'layouts/header' %>
   <div class="container">
     <% flash.each do |key,value| %>
-      <div class="alert alert-<%= key %>"><%= value %></div>
-      <%= "ambas lineas son iguales" %>
-      <%= content_tag(:div, value, class: "alert alert-#{key}")%>
+      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
     <% end %>
     <%= yield %>
   <%= render 'layouts/footer' %>
