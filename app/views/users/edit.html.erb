@@ -13,6 +13,9 @@
     <%=  f.text_field  :password  %>
     <%=  f.label  :password_confirmation  %>
     <%=  f.text_field  :password_confirmation  %>
+    <%=  f.label  :admin  %>
+    <%=  f.check_box  :admin  %><br /><br />
+
     <%=  f.submit "Save changes", class: "btn btn-large btn-primary"  %>
   <% end %>
 
